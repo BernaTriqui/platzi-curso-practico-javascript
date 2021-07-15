@@ -74,3 +74,69 @@ console.group("Triangulos");
      
 
      console.groupEnd();
+
+     //Aqui interactuamos con el HTML
+     function calcularPerimetroCuadrado() {
+        const input = document.getElementById("InputCuadrado");
+        const value = input.value;
+
+        const perimetro = perimetroCuadrado(value);
+        alert(perimetro);
+     }
+
+     function calcularAreaCuadrado() {
+        const input = document.getElementById("InputCuadrado");
+        const value = input.value;
+
+        const area = areaCuadrado(value);
+        alert(area);
+    }
+//////triangulo
+     function calcularPerimetroTriangulo() {
+        const input1 = document.getElementById("ladoA");
+        const value1 = Number(input1.value);
+        
+        const input2 = document.getElementById("ladoB");
+        const value2 = Number(input2.value);
+        const input3 = document.getElementById("base");
+        const value3 = Number(input3.value);
+
+        const perimetro = perimetroTriangulo(value1, value2, value3);
+        alert(perimetro);
+    }
+
+    function calcularAreaTriangulo(){
+        const input4 = document.getElementById("altura");
+        const value4 = Number(input4.value);
+
+        const input5 = document.getElementById("base1");
+        const value5 = Number(input5.value);
+
+        const areaT = areaTriangulo(value4, value5);
+        alert(areaT);
+    }
+    //circulo
+
+    function calcularDiametroCirculo(){
+        const input = document.getElementById("radio");
+        const value = Number(input.value);
+
+        const diametroC = diametroCirculo(value);
+        alert(diametroC);
+    }
+
+    function calcularPerimetroCirculo(){
+        const input = document.getElementById("radio");
+        const value = Number(input.value);
+
+        const perimetroC = perimetroCirculo(value);
+        alert(perimetroC);
+    }
+
+    function calcularAreaCirculo(){
+        const input = document.getElementById("radio");
+        const value = Number(input.value);
+
+        const areaC = areaCirculo(value);
+        alert(areaC);
+    }
