@@ -75,6 +75,34 @@ console.group("Triangulos");
 
      console.groupEnd();
 
+     ////
+     
+    
+    function alturaTrianguloIsoceles(trianguloGrandeLadoA, trianguloGrandeLadoB, trianguloGrandeLadoBase){
+        if( trianguloGrandeLadoA != trianguloGrandeLadoB){
+            console.error("Los lados a y b no son iguales");
+
+        }else{
+            //let trianguloPequenoLadoA;
+            const trianguloPequenoLadoB = trianguloGrandeLadoBase / 2;
+            const trianguloPequenoLadoBase = trianguloGrandeLadoA;
+            //...
+            const trianguloPequenoLadoBCuadrado = trianguloPequenoLadoB * trianguloPequenoLadoB;
+            const trianguloPequenoLadoBaseCuadrado = trianguloPequenoLadoBase * trianguloPequenoLadoBase;
+    
+            const trianguloPequenoLadoA = Math.sqrt(trianguloPequenoLadoBaseCuadrado - trianguloPequenoLadoBCuadrado);
+    
+            const trianguloGrandeAltura = trianguloPequenoLadoA;
+            return trianguloGrandeAltura;
+        }
+    }
+        
+    //function alturaTrianguloIsoceles(trianguloGrandeLadoA, trianguloGrandeLadoB, )
+
+    //Console
+      //La altura de tu triángulo isosceles es: 18.44
+     ////
+
      //Aqui interactuamos con el HTML
      function calcularPerimetroCuadrado() {
         const input = document.getElementById("InputCuadrado");
